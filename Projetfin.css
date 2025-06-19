@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #101010;
+}
+.Roi{
+    height: 100vh;
+    width: 100%;
+    background-image: url(back.jpg);
+    background-size:cover; 
+    background-position: center;
+    transition: 0.3s ease-in-out;
+}
+nav{
+    position: fixed;
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    background-color: #363a3dc7;
+    justify-items: center;
+    justify-content: space-between;
+    padding-right: 8%;
+    padding-left: 8%;
+    transition: 0.5s ease;
+}
+.logo{
+    color: #f9004d;
+    font-size: 27px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s ease-in;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #f9004d;
+}
+.container1{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #000000b2, 0px 0px 15px #a7a5a5;
+}
+h2{
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin: 20px 0 10px ;
+}
+.cv-btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: transform .4s ease;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #a7a5a5;
+}
+.cv-btn:hover{
+    transform: scale(1.2);
+}
+.container2{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #333536e1;
+}
+.container2 img{
+    height: auto;
+    width: 330px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.text-apropos{
+    width: 550px;
+}
+.content1{
+    width: 1130px;
+    align-items: center;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.text-apropos h2{
+    color: #f9004d;
+    font-size: 55px;
+    margin-bottom: 20px ;
+}
+.text-apropos h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding: 0 55px;
+}
+.text-apropos p{
+    color:white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.competence{
+    background-color: #353232;
+    width: 100%;
+    padding: 70px 0px;
+}
+.competence .text-contenue{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+.competence .text-competence h2{
+    color: #f9004d;
+    font-size: 50px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.competence .text-contenue .contenue-left{
+    position: relative;
+    width: 46%;
+    height: 50%;
+}
+.competence .text-contenue .contenue-left p{
+    color:white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    margin-left: 35px;
+}
+
+.competence .text-contenue .contenue-left .text-competence2{
+    margin-left: 85px;
+}
+.competence .text-contenue .contenue-left a{
+    margin: 15rem;
+    margin-bottom: 5px;
+    padding: 8px;
+    margin-top: 81rem;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;   
+}
+
+.competence .text-contenue .contenue-right{
+    position: relative;
+    width: 46%;
+}
+.competence .text-contenue .contenue-right .bar-progress{
+    margin-bottom: px;
+    padding: 3px;
+}
+.competence .text-contenue .contenue-right .bar-progress .niveau{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.competence .text-contenue .contenue-right .bar-progress .niveau span{
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    margin-bottom: 25px;
+    margin-right: 8rem;
+}
+.competence .text-contenue .contenue-right .bar-progress .ligne{
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.competence .text-contenue .contenue-right .bar-progress .ligne::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.competence .text-contenue .contenue-right .bar-progress .html::before{
+    width: 60%;
+    background-color: #e45126;
+}
+.competence .text-contenue .contenue-right .bar-progress .css::before{
+    width: 45%;
+    background-color: #e45126;
+}
+.competence .text-contenue .contenue-right .bar-progress .javaS::before{
+    width: 25%;
+    background-color: #4400ff;
+}
+.competence .text-contenue .contenue-right .bar-progress .graph::before{
+    width: 80%;
+    background-color: #66ff00;
+}
+.projets{
+    background: #101010;
+    width: 100%;
+    padding: 70px 0px;
+}
+.mesprojets h2{
+    color: #f9004d;
+    font-size: 50px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.projets-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+.container-bx{
+    height: 368px;
+    width: 335px;
+    padding: 10px 35px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.container-bx .projet1 img{
+    height: auto;
+    width: 290px;
+    margin-left: 0.1%;
+}
+.container-bx h3{
+    color: #f9004d;
+    font-size: 23px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.text-projets p{
+    color: #000;
+    font-size: 16px;
+    line-height: 27px;
+}
+.container-bx .projet1 a{
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;   
+}
+.projet1 a:hover{
+    transform:translate(1.5);
+    background-color: #f9004c;
+}
+.contact{
+    background: #191919;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+.contact .heading{
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.contact .moi{
+    color: #f9004c;
+}
+.contact form{
+    max-width: 30rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    color: white;
+    background: #191919;
+    border-radius: 0.4rem;
+    border: 1px solid #f9004c;
+    margin: 4px 0;
+}
+.contact .input-box input:focus,.contact .input-box input:valid,
+.contact .input-box textarea:focus, .contact .input-box textarea:valid{
+    color: white;
+    font-size: 12px;
+    transform: translateY(-12px);
+}
+.contact form .btn input[type="submit"] {
+    margin: auto;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;   
+}
+.contact form .btn:hover{
+    transform:translate(1.5);
+    background-color: #f9004c;
+}.contact{
+    background: #191919;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+.contact .heading{
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.contact .moi{
+    color: #f9004c;
+}
+.contact form{
+    max-width: 30rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 50rem;
+    padding: 20px;
+    font-size: 1rem;
+    color: white;
+    background: #191919;
+    border-radius: 0.4rem;
+    border: 1px solid #f9004c;
+    margin: 4px 0;
+}
+.contact form .btn{
+    margin: auto;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;   
+}
+.contact form .btn:hover{
+    transform:translate(1.5);
+    background-color: #f9004c;
+}
+.contact{
+    background: #191919;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+.contact .heading{
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.contact .moi{
+    color: #f9004c;
+}
+.contact form{
+    max-width: 30rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 50rem;
+    padding: 20px;
+    font-size: 1rem;
+    color: white;
+    background: #191919;
+    border-radius: 0.4rem;
+    border: 1px solid #f9004c;
+    margin: 4px 0;
+}
+.contact form .btn{
+    margin: auto;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;   
+}
+.contact form .btn:hover{
+    transform:translate(1.5);
+    background-color: #f9004c;
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    background: #353232;
+    color: white;
+}
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 991px){
+    .hearder{
+        padding: 2rem 3%;
+    }
+    .Roi{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3%;
+    }
+    .content1{
+        padding: 7rem;
+    }
+    .container1{
+        padding: 7rem;
+    }
+    .projets-box{
+        flex-direction: column;
+        display: flex;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media (max-width: 991px){
+    #menu-icon{
+        display: block;
+    }
+    .logo{
+        position: fixed;
+    }
+    .nav{
+        position: fixed;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #363a3dc7;
+        transition: all 0.5s ease;
+        backdrop-filter: blur(10px);
+    }
+    .nav a{
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .nav.active{
+        right: 0;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .acceuil-text h2{
+        font-size: 2.6rem;
+    }
+    .acceuil-text h1{
+        font-size: 5rem;
+    }
+    .acceuil-text{
+        order: 2;
+        margin-left: 1rem;
+    }
+    .projets h2{
+        justify-items: center;
+        letter-spacing: 1px;
+        font-size: 22px;
+        margin-right: 15%;
+
+    }
+    .content1{
+        flex-direction: column;
+    }
+    .content1 img{
+        width: 75vw;
+        margin-top: 1rem;
+    }
+    .text-apropos h2{
+        font-size: 27px;
+        margin-left: 30%;
+    }
+    .text-apropos h5{
+        font-size: 15px;
+        margin-left: 22%;
+    }
+    .text-apropos p{
+        margin-left: 13%;
+        font-size: 13px;
+        text-align: center;
+        width: 50rem;
+    }
+    .competence .text-contenue .text-competence .text-competence1{
+      flex-direction: column;
+    }
+    .competence .text-contenue .ligne-competence{
+        position: relative;
+        width: 100%;
+    }
+    .competence .text-contenue .contenue-right{
+        margin-top: 40px;
+    }
+
+}
